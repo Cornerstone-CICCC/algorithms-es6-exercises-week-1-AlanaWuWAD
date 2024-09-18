@@ -11,3 +11,16 @@ Fill in the blanks with the flavor of the ice cream, vessel, and toppings. For e
 
 I'd like two scoops of vanilla ice cream in a cone with peanuts. 
 */
+
+let flavor = ["vanilla", "chocolate"]
+let vessel = ["console", "bowl"]
+let topping = ["sprinkles", "peanuts"]
+
+for (let i = 0; i < flavor.length; i++) {
+    for (let j = 0; j < vessel.length; j++) {
+        for (let k = 0; k < topping.length; k++) {
+            console.log(`I'd like two scoops of ${flavor[i]} ice cream in a ${vessel[j]} with ${topping[k]}`)
+
+        }
+    }
+}
