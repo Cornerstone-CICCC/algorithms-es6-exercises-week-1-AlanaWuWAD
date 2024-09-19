@@ -26,3 +26,40 @@ var shirtSleeve = 8.47; // size M (medium)
 Then print N/A to the console because the measurements don't all match up with one particular size.
 
 */
+
+const width = 22.2
+const length =30.2
+const sleeve = 8.64
+
+let buySize = [width, length, sleeve]
+let size = []
+let sizeTable = [[28,26,24,22,20,18],[34,33,31,30,29,28],[10.13,9.63,8.88,8.63,8.38,8.13],["3XL","2XL","XL","L","M","S"]]
+
+for (let i=0; i< sizeTable.length -1; i++){
+    for (let j=0; j < sizeTable[i].length; j++){
+       
+        if (buySize[i] >= sizeTable[i][j]){
+            size[i] = sizeTable[sizeTable.length -1][j]
+        }
+        else {
+            size[i] = null
+        }
+    
+        if (size[i]){
+            break;
+        }
+
+    }
+  
+}
+console.log(size)
+
+if (size[0] === size[1] && size[0] === size[2]) {
+    console.log(size[0])
+}
+else {
+    console.log(`N/A`)
+}
+    
+
+
