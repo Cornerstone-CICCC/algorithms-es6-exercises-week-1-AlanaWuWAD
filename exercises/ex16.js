@@ -35,7 +35,6 @@ function makeLine(length) {
     for (var j = 1; j <= length; j++) {
       line += "* "
     }
-    //console.log(line)
     return line + "\n";
 }
 
