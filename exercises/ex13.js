@@ -9,3 +9,11 @@ A factorial is calculated by multiplying a number by all the numbers below it. F
 
 Save your final answer in a variable called solution and print it to the console.
 */
+
+let num = 3
+let factorial = 1
+
+for (let i=1; i<=num; i++) {
+    factorial *= i
+}
+console.log (`${num}! = ${factorial}`)
