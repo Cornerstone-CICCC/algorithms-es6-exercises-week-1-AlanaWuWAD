@@ -20,3 +20,34 @@ console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
 console.log(lastIndexOf([], 3), "=?", -1);
 
 */
+
+function lastIndexOf (array,value) {
+    return array.lastIndexOf(value)
+}
+
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 2), "=?", 4);
+console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 3), "=?", -1);
+console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
+console.log(lastIndexOf([], 3), "=?", -1);
+
+// let lastIndexOf = [ 0, 1, 4, 1, 2 ]
+// let value = 3
+
+// indexOfLastTime(lastIndexOf,value)
+
+// function indexOfLastTime (array,value) {
+//     for ( let i = array.length-1; i >= -1; i--) {
+//         if (i === -1){
+//             console.log(`lastIndexOf([${array}], ${value}), -1`)
+//             break;
+//         }
+//         if (array[i] === value){
+//             console.log(`lastIndexOf([${array}], ${value}), ${i}`)
+//             break;
+//         }
+      
+//     }
+
+// }
+
